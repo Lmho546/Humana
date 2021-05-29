@@ -1,0 +1,39 @@
+.homeMainBackground{
+    background-color: white;
+    display: flex;
+    justify-content:space-between;
+}
+
+.homeHumanaLogoAll{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 100px;
+}
+
+.homeHumanaLogo{
+    margin-bottom: 50px;
+}
+
+.homeTextHumanaLogo{
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    font-weight: bold;
+    margin-bottom: 50px;
+    line-height: 1.5;
+}
+
+.homeButtonNuestrasAsesorias{
+    padding:13px;
+    padding-left:25px;
+    padding-right:25px;
+    background-color: orange;
+    border-radius: 6px;
+    color: white;
+}
+
+.homePhotoMain{
+    width: 600px;
+    margin: 100px;
+}
