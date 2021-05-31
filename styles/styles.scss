@@ -1,13 +1,17 @@
-@import "reset";
+@import 'reset';
 
-@import "Container";
+@import 'fonts';
 
-@import "header";
+@import 'container';
 
-@import "homeBody";
+@import 'background';
 
-@import "homeMain";
+@import 'header';
 
-@import "homeSection";
+@import 'homeBody';
 
-@import "homeSection2";
+@import 'homeMain';
+
+@import 'homeSection';
+
+@import 'homeFooter';

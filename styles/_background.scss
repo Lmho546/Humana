@@ -1,0 +1,15 @@
+$colors: (
+	'White': #fff,
+	'Red': #d42428,
+	'Pink': #ea2560,
+	'PinkInstagram': #e53e70,
+	'Orange': #f5c20e,
+	'Blue': #0349aa,
+	'BlueFacebook': #3a5a98,
+);
+
+@each $color, $key in $colors {
+	.bg#{$color} {
+		background-color: $key !important;
+	}
+}

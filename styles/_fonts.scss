@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+$colors: ('White': #FFFFFFD9, 'Black': #1A1A1A, 'Pink': #EA2560 );
+$weights: ('Regular': 400, 'SemiBold': 600, 'Bold':700);
+
+@each $color, $key in $colors{
+    .font#{$color}{
+        color: $key;
+    }
+}
+
+@each $key, $weight in $weights {
+    .font#{$key}{
+        font-weight: $weight !important;
+    }
+}
+.font14{
+    font-size: 14px !important;
+}
+.fontOS{
+    font-family: 'Open Sans',Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 21,79px;
+}

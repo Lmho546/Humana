@@ -1,46 +1,46 @@
-header{
-    position: fixed;
+header {
+	position: fixed;
 }
 
-.navBar{
-    display: flex;
-    background-color: white;
-    justify-content: flex-start;
-    list-style: none;
-    align-items: center;
+.navBar {
+	display: flex;
+	background-color: white;
+	justify-content: flex-start;
+	list-style: none;
+	align-items: center;
 }
 
-a{
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-weight: bold;
-    text-decoration: none;
-    list-style: none;
-    color: rgb(241, 106, 129);
+a {
+	font-family: 'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	list-style: none;
+	color: rgb(241, 106, 129);
 }
-a:hover{
-    color: rgb(255, 34, 71);
+a:hover {
+	color: rgb(255, 34, 71);
 }
-a:visited{
-    color: rgb(255, 34, 71);
-}
-
-.buttonMenu{
-    margin-left: 40px;
+a:visited {
+	color: rgb(255, 34, 71);
 }
 
-.buttonContacto{
-    margin-left: 40px;
-    padding:13px;
-    padding-left:25px;
-    padding-right:25px;
-    background-color: orange;
-    border-radius: 6px;
-    color: white;
-}
-.buttonContacto:visited{
-    color: white;
+.buttonMenu {
+	margin-left: 40px;
 }
 
-.logo{
-    width: 75px;
+.buttonContacto {
+	margin-left: 40px;
+	padding: 13px;
+	padding-left: 25px;
+	padding-right: 25px;
+	background-color: orange;
+	border-radius: 6px;
+	color: white;
+}
+.buttonContacto:visited {
+	color: white;
+}
+
+.logo {
+	width: 75px;
 }
