@@ -8,8 +8,40 @@ $colors: (
 	'BlueFacebook': #3a5a98,
 );
 
+
 @each $color, $key in $colors {
-	.bg#{$color} {
+	.bg#{$color}{
 		background-color: $key !important;
+
+		@if ($color == "White"){
+
+			background-image: url("../img/home/background-pink.png") ;
+
+		}
+		@else{
+
+			background-image: url("../img/home/background-white.png") ;
+
+		}
+
 	}
+
+	.bg#{$color}Footer{
+
+		background-color: $key !important;
+
+		background-image: none;
+
+	}
+	
+	.bg#{$color}Header{
+
+		background-color: $key !important;
+
+		background-image: none;
+
+	}
+
 }
+
+
