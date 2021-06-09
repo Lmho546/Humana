@@ -1,0 +1,80 @@
+@media (max-width: 1400px) {
+
+    .Container{
+        width: unset;
+        max-height: unset;
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .navBar{
+        justify-content: center;
+    }
+
+    .buttonMenu{
+        margin-right: 40px;
+        margin-left: 0px;
+    }
+    .buttonContacto{
+        margin-left: 0px;
+    }
+    .homeHumanaLogoAll{
+        align-items: center;
+        margin: 5px;
+        margin-top: 50px;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    .homePhotoMain{
+        margin:10px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .homeSectionPhoto {
+        margin: 10px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    
+    .homeSectionLogoAll {
+        margin: 5px;
+        margin-top: 50px;
+        margin-right: 50px;
+        margin-left: 50px;
+        align-items: center;
+        order: -1;
+        text-align: center;
+    }
+    .homeSectionTitle{
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .homeSectionText{
+        margin-top: 5px;
+    }
+    .homeSectionCategories{
+        padding: 0px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+        align-items: center;
+       
+
+        .categoryContainer{
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items: center;
+            text-align: center;
+            padding: 50px;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            
+        }
+    }
+    .rights{
+        text-align: center;
+    }
+}
