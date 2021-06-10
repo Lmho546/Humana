@@ -1,6 +1,15 @@
 .homeSection {
 	display: flex;
 	justify-content: space-between;
+	.sectionSubtitle {
+		font-family: 'Open Sans';
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 22px;
+		letter-spacing: 0em;
+		text-align: left;
+	}
 }
 
 .homeSectionPhoto {
@@ -24,6 +33,7 @@
 	font-size: 16px;
 	font-weight: 600;
 	line-height: 21.79px;
+	font-style: normal;
 }
 .homeSectionCategories {
 	padding: 108px 0;
@@ -47,6 +57,7 @@
 		margin-top: 52px;
 	}
 }
+
 .title {
 	font-size: 18px;
 	font-weight: 700;

@@ -4,44 +4,35 @@ $colors: (
 	'Pink': #ea2560,
 	'PinkInstagram': #e53e70,
 	'Orange': #f5c20e,
+	'LightBlue': #00c2cb,
 	'Blue': #0349aa,
 	'BlueFacebook': #3a5a98,
 );
 
-
 @each $color, $key in $colors {
-	.bg#{$color}{
+	.bg#{$color} {
 		background-color: $key !important;
 
-		@if ($color == "White"){
-
-			background-image: url("../img/home/background-pink.png") ;
-
+		@if ($color == 'White') {
+			background-image: url('../img/home/background-pink.png');
+		} @else {
+			background-image: url('../img/home/background-white.png');
 		}
-		@else{
-
-			background-image: url("../img/home/background-white.png") ;
-
-		}
-
-	}
-
-	.bg#{$color}Footer{
-
-		background-color: $key !important;
-
-		background-image: none;
-
 	}
 	
-	.bg#{$color}Header{
+	.bg#{$color}Button {
+		background-color: $key !important;
+	}
 
+	.bg#{$color}Footer {
 		background-color: $key !important;
 
 		background-image: none;
-
 	}
 
+	.bg#{$color}Header {
+		background-color: $key !important;
+
+		background-image: none;
+	}
 }
-
-

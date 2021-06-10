@@ -1,3 +1,5 @@
+$colors: ('Pink': #EA2560, 'Blue': #5D17EB);
+
 header {
 	position: sticky;
 	top: 0px;
@@ -18,17 +20,25 @@ a {
 	list-style: none;
 	color: rgb(241, 106, 129);
 }
-a:hover {
-	color: #EA2560;
-}
-a:visited {
-	color: #EA2560;
-}
+
 
 .buttonMenu {
 	margin-left: 40px;
 }
-
+@each $color, $key in $colors {
+	.navLink#{$color}{
+		color:#{$key};
+		opacity: 62%;
+		&:hover {
+			color: #{$key};
+			opacity: 100%;
+		}
+	}
+	.active{
+		opacity: 100%;
+		
+	}
+}
 .buttonContacto {
 	margin-left: 40px;
 	padding: 13px;
