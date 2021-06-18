@@ -36,7 +36,7 @@
     .homeSectionPhoto {
         margin: 10px;
         margin-top: 20px;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
     
     .homeSectionLogoAll {
@@ -83,4 +83,204 @@
         text-align: center;
     }
    
+}
+
+@media (max-width: 980px){
+
+    .bgPinkFooter {
+
+        :first-child p {
+            display: none;
+        }
+    }
+
+    .rights {
+        text-align: justify;
+        height: unset;
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .homeTextHumanaLogo {
+        text-align: justify;
+    }
+    .homeSectionText {
+        text-align: justify;
+    }
+  
+    .selector {
+        display: none;
+    }
+
+    .navBar {
+        display: none;
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        list-style: none;
+        background-color: black;
+        padding-bottom: 5px;
+        
+        li {
+            border: 2px solid #EA2560;
+            margin-bottom: 3px;
+            margin-left: 0px;
+            margin-right: 0px;
+            font-size: 20px !important;
+        }
+        li:first-child {
+            display: none;
+        }
+    }
+
+    .navbarResponsive {
+        
+        display: block;
+        background-color: black;
+
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+
+    .buttonContacto {
+        display: none !important;
+    }
+
+    .buttonContactoResponsive {
+        display: block !important;
+        border: 2px solid #EA2560 !important;
+        background-color: #f5c20e;
+        margin-bottom: 0px !important;
+    }
+
+    .menu {
+
+        cursor:pointer;
+
+        .baseMenu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        background:white;
+        border-radius: 50%;
+        border: 2px solid #EA2560;;
+        }
+        .lineMenu {
+        padding-left:15px;
+        padding-right:15px;
+        margin-bottom: 3px;
+        margin-top: 3px;
+        width: 5px;
+        height: 5px;
+        background:#EA2560;
+        border-radius: 6px;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    
+    .homeHumanaLogo {
+        width: 300px;
+    }
+    
+    .homePhotoMain {
+        width: 500px;
+    }
+    
+    .homeSectionPhoto {
+        width: 350px;
+    }
+
+    .homeSectionTitle {
+        width: 400px;
+    }
+
+    
+    .homeSectionCategories {
+
+        margin-left: 25px;
+        margin-right: 25px;
+
+        .categoryContainer {
+
+            padding: 15px;
+            text-align: justify;
+
+                .title {
+                text-align: center;
+                }
+        }
+    }
+  
+
+    .footer {
+
+        :first-child img {
+            display: none;
+        }
+
+        .title {
+            display: none;
+        }
+
+    }
+
+    .socialMedia {
+        .socialIcon {
+            height: 88px;
+            width: 88px;
+            margin: 0px;
+            margin-left: 10.5px; 
+            margin-right: 10.5px;
+            i {
+                font-size: 44px;
+            }
+        }
+    }
+    
+
+}
+@media (max-width: 500px){
+
+    .button{
+        font-size: 14px;
+    }
+    
+    .homeSectionTitle {
+        width: 300px;
+    }
+
+    .homePhotoMain {
+        width: 350px;
+    }
+    
+    .homeSectionPhoto {
+        width: 350px;
+    }
+
+    .socialMedia {
+        .socialIcon {
+            height: 66px;
+            width: 66px;
+            margin: 0px;
+            margin-left: 10.5px; 
+            margin-right: 10.5px;
+            i {
+                font-size: 33px;
+            }
+        }
+    }
+    .rights {
+       font-size: 13px;
+    }
+    
 }

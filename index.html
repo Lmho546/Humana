@@ -24,12 +24,27 @@
 	<body class="homeBodyBackground">
 		<header class="bgWhiteHeader">
 			<nav class="Container">
-				<ul class="navBar">
+
+				<ul class="navbarResponsive">
 					<li>
 						<a href="">
 							<img class="logo" src="img/logo.png" alt="logo"/>
 						</a>
+						<div id="menu" class="menu">
+							<div class="baseMenu">
+								<div class="lineMenu"></div>
+								<div class="lineMenu"></div>
+								<div class="lineMenu"></div>
+							</div>
+						</div>
 					</li>
+				</ul>
+
+				<ul id="navBar" class="navBar">
+					<li>
+						<a href="">
+							<img class="logo" src="img/logo.png" alt="logo"/>
+						</a>
 					<li>
 						<a class="navLinkPink active" href="index.html">Inicio</a>
 						<div class="selector"></div>
@@ -43,7 +58,11 @@
 					<li class="buttonContacto">
 						<a class="button" href="contacto/index.html">Contacto</a>
 					</li>
+					<li class="buttonContactoResponsive">
+						<a class="navLinkWhite" href="contacto/index.html">Contacto</a>
+					</li>
 				</ul>
+
 			</nav>
 		</header>
 
@@ -139,7 +158,13 @@
 		<section class="bgWhite">
 			<div class="Container homeSection">
 				<div class="homeSectionLogoAll">
-					<img src="/img/home/home-section-logo-3.png" alt="" />
+
+					<img 
+						class="homeSectionTitle"
+						src="img/home/home-section-logo-3.png" 
+						alt="home-section-logo-3" 
+					/>
+
 					<p class="homeSectionText fontBlack fontRegular font14">
 						Lorem Ipsum is simply dummy text of the printing and typesetting
 						industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -197,7 +222,7 @@
 					/>
 				</div>
 				<div class="homeSectionLogoAll homeCenter">
-					<img src="img/home/home-section5-title.png" alt="home-section5-title" />
+					<img class="homeSectionTitle" src="img/home/home-section5-title.png" alt="home-section5-title" />
 					<a
 						class="button bgBlue"
 						href="nuestras-asesorias/index.html"
@@ -210,7 +235,7 @@
 		<footer>
 			<div class="bgWhiteFooter">
 				<div class="Container footer">
-					<div><img src="img/home/home-humana-footer.png" alt="" /></div>
+					<div><img src="img/home/home-humana-footer.png" alt="home-humana-footer" /></div>
 					<div class="title dBlock">
 						<a href="index.html">HOME</a>
 						<a href="about-us/index.html">ACERCA DE</a>
@@ -237,10 +262,24 @@
 					<p>
 						2021 Todos los derechos reservados HUMANA. Diseñado por
 						<a href="">Candela Gaitán</a>. Desarrollado por
-						<a href="">Iván Polanis</a> y <a href="">Nazareno</a>
+						<a href="">Iván Polanis</a> y <a href="">Nazareno Ledesma</a>.
+					</p>
+				</div>
+				<div class="Container rights footerResponsive">
+					<p>
+						2021 Todos los derechos reservados HUMANA. 
+						<br>
+						Diseñado por
+						<a href="">Candela Gaitán</a>. 
+						<br>
+						Desarrollado por
+						<a href="">Iván Polanis</a> y <a href="">Nazareno Ledesma</a>.
 					</p>
 				</div>
 			</div>
 		</footer>
+
+		<script src="js/menu.js"></script>
+
 	</body>
 </html>
