@@ -1,4 +1,4 @@
-$colors: ('Pink': #EA2560, 'Blue': #5D17EB);
+$colors: ('Pink': #EA2560, 'Blue': #5D17EB, 'White':white);
 
 header {
 	position: sticky;
@@ -22,6 +22,10 @@ header {
 		}
 }
 
+.navbarResponsive {
+	display: none;
+}
+
 a {
 	font-family: 'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
 	font-weight: bold;
@@ -29,7 +33,6 @@ a {
 	list-style: none;
 	color: rgb(241, 106, 129);
 }
-
 
 @each $color, $key in $colors {
 	.navLink#{$color}{
@@ -56,6 +59,10 @@ a {
 }
 .button:visited {
 	color: white;
+}
+
+.buttonContactoResponsive {
+	display: none !important;
 }
 
 .logo {
