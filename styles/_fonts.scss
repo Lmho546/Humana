@@ -4,6 +4,7 @@ $colors: (
 	'White': #ffffffd9,
 	'Black': #1a1a1a,
 	'Pink': #ea2560,
+	'Blue': #4B65FF,
 	'LightBlue': #00c2cb,
 	'Orange': #f5c20e,
 );
@@ -26,6 +27,9 @@ $weights: (
 }
 .font14 {
 	font-size: 14px !important;
+}
+.font-5 {
+	font-size: 21px !important;
 }
 .fontOS {
 	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
