@@ -198,24 +198,41 @@
 
 header {
   position: sticky;
-  top: 0px; }
+  top: 0px;
+  z-index: 0; }
 
-.navBar {
+.Container.navBar {
   display: flex;
-  background-color: white;
   justify-content: flex-start;
   list-style: none;
-  align-items: center; }
-  .navBar li {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 40px;
-    position: relative; }
+  align-items: center;
+  padding: 12px;
+  flex-direction: row; }
+  .Container.navBar .navbar-links {
+    display: flex; }
+    .Container.navBar .navbar-links li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding: 0 32px; }
+      .Container.navBar .navbar-links li a {
+        display: block; }
 
-.navbarResponsive {
-  display: none; }
+.toggleButton {
+  position: absolute;
+  top: 2.725rem;
+  right: 2rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px; }
+  .toggleButton .bar {
+    height: 3px;
+    width: 80%;
+    background-color: #000;
+    border-radius: 15px; }
 
 a {
   font-family: 'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
@@ -225,20 +242,20 @@ a {
   color: #f16a81; }
 
 .navLinkPink {
-  color: #EA2560;
+  color: #ea2560;
   opacity: 62%; }
   .navLinkPink:hover {
-    color: #EA2560;
+    color: #ea2560;
     opacity: 100%; }
 
 .active {
   opacity: 100%; }
 
 .navLinkBlue {
-  color: #5D17EB;
+  color: #5d17eb;
   opacity: 62%; }
   .navLinkBlue:hover {
-    color: #5D17EB;
+    color: #5d17eb;
     opacity: 100%; }
 
 .active {
@@ -274,7 +291,7 @@ a {
 .selector {
   width: 6px;
   height: 6px;
-  background: #EA2560;
+  background: #ea2560;
   border-radius: 50%;
   margin-top: 7px;
   position: absolute;
@@ -283,7 +300,7 @@ a {
 .selector2 {
   width: 6px;
   height: 6px;
-  background: #5D17EB;
+  background: #5d17eb;
   border-radius: 50%;
   margin-top: 7px;
   position: absolute;
@@ -433,11 +450,6 @@ a {
     margin: 0px; }
   .navBar {
     justify-content: center; }
-    .navBar li {
-      margin-left: 0px;
-      margin-right: 40px; }
-    .navBar .buttonContacto {
-      margin-right: 0px; }
   .homeHumanaLogoAll {
     align-items: center;
     margin: 5px;
@@ -498,36 +510,6 @@ a {
     text-align: justify; }
   .selector {
     display: none; }
-  .navBar {
-    display: none;
-    width: 100%;
-    position: absolute;
-    text-align: center;
-    list-style: none;
-    background-color: black;
-    padding-bottom: 5px; }
-    .navBar li {
-      border: 2px solid #EA2560;
-      margin-bottom: 3px;
-      margin-left: 0px;
-      margin-right: 0px;
-      font-size: 20px !important; }
-    .navBar li:first-child {
-      display: none; }
-  .navbarResponsive {
-    display: block;
-    background-color: black; }
-    .navbarResponsive li {
-      display: flex;
-      align-items: center;
-      justify-content: space-around; }
-  .buttonContacto {
-    display: none !important; }
-  .buttonContactoResponsive {
-    display: block !important;
-    border: 2px solid #EA2560 !important;
-    background-color: #f5c20e;
-    margin-bottom: 0px !important; }
   .menu {
     cursor: pointer; }
     .menu .baseMenu {
@@ -539,7 +521,7 @@ a {
       height: 60px;
       background: white;
       border-radius: 50%;
-      border: 2px solid #EA2560; }
+      border: 2px solid #ea2560; }
     .menu .lineMenu {
       padding-left: 15px;
       padding-right: 15px;
@@ -547,8 +529,29 @@ a {
       margin-top: 3px;
       width: 5px;
       height: 5px;
-      background: #EA2560;
-      border-radius: 6px; } }
+      background: #ea2560;
+      border-radius: 6px; }
+  .Container .toggleButton {
+    display: flex; }
+  .Container.navBar {
+    flex-direction: column;
+    align-items: flex-start; }
+    .Container.navBar .navbar-links {
+      display: none;
+      flex-direction: column;
+      width: 100%; }
+      .Container.navBar .navbar-links ul {
+        width: 100%;
+        flex-direction: column; }
+      .Container.navBar .navbar-links li {
+        text-align: center;
+        padding: 10px 0; }
+        .Container.navBar .navbar-links li .buttonContact {
+          justify-self: center; }
+      .Container.navBar .navbar-links.active {
+        display: flex; }
+  .selector2 {
+    display: none; } }
 
 @media (max-width: 650px) {
   .homeHumanaLogo {
@@ -643,7 +646,6 @@ a {
   display: flex;
   flex-wrap: wrap; }
   .videos .item {
-    position: relative;
     width: calc(100% / 3); }
     .videos .item::before {
       content: '';

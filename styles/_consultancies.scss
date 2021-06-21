@@ -32,7 +32,6 @@
 	display: flex;
 	flex-wrap: wrap;
 	.item {
-        position: relative;
 		width: calc(100% / 3);
 		&::before {
 			content: '';

@@ -1,12 +1,6 @@
-document.getElementById("menu").onclick = function () {
-    
-if(document.getElementById("navBar").style.display != "block") {
+const toggleButton = document.getElementsByClassName('toggleButton')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
-  document.getElementById("navBar").style.display = "block";
-
-}
-else {
-    document.getElementById("navBar").style.display = "none";
-}
-};
-
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+})

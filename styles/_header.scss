@@ -1,29 +1,55 @@
-$colors: ('Pink': #EA2560, 'Blue': #5D17EB, 'White':white);
+$colors: (
+	'Pink': #ea2560,
+	'Blue': #5d17eb,
+	'White': white,
+);
 
 header {
 	position: sticky;
 	top: 0px;
+	z-index: 0;
 }
 
-.navBar {
-	display: flex;
-	background-color: white;
-	justify-content: flex-start;
-	list-style: none;
-	align-items: center;
-
-		li {
+.Container{
+	&.navBar {
+		display: flex;
+		justify-content: flex-start;
+		list-style: none;
+		align-items: center;
+		padding: 12px;
+		flex-direction: row;
+		
+		.navbar-links {
 			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			margin-left: 40px;
-			position: relative;
+			li {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				position: relative;
+				padding: 0 32px;
+				a{
+					display: block;
+				}
+			}
 		}
+	}
 }
 
-.navbarResponsive {
+.toggleButton{
+	position: absolute;
+	top: 2.725rem;
+	right: 2rem;
 	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 21px;
+	.bar{
+		height: 3px;
+		width: 80%;
+		background-color: #000;
+		border-radius: 15px;
+	}
 }
 
 a {
@@ -35,17 +61,16 @@ a {
 }
 
 @each $color, $key in $colors {
-	.navLink#{$color}{
-		color:#{$key};
+	.navLink#{$color} {
+		color: #{$key};
 		opacity: 62%;
 		&:hover {
 			color: #{$key};
 			opacity: 100%;
 		}
 	}
-	.active{
+	.active {
 		opacity: 100%;
-		
 	}
 }
 
@@ -72,7 +97,7 @@ a {
 .selector {
 	width: 6px;
 	height: 6px;
-	background:#EA2560;
+	background: #ea2560;
 	border-radius: 50%;
 	margin-top: 7px;
 	position: absolute;
@@ -82,7 +107,7 @@ a {
 .selector2 {
 	width: 6px;
 	height: 6px;
-	background: #5D17EB;
+	background: #5d17eb;
 	border-radius: 50%;
 	margin-top: 7px;
 	position: absolute;
