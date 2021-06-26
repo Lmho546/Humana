@@ -8,7 +8,6 @@
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<link
-			style="border-radius: 50px"
 			rel="icon"
 			type="image/png"
 			href="../img/logo.png"
@@ -25,7 +24,7 @@
 		<header class="bgLightBlueHeader">
 			<nav class="Container navBar">
 				<a href="">
-					<img class="logo" src="../img/logo.png" alt="logo" />
+					<img class="logo" src="../img/logo-violet.png" alt="logo-violet" />
 				</a>
 				<a href="#" class="toggleButton">
 					<span class="bar"></span>
@@ -56,12 +55,12 @@
 		<main class="bgLightBlue">
 			<div class="justify-center">
 				<div class="Container homeSection">
-					<div><img src="../img/about-us/main-image.png" /></div>
+					<div><img class="homePhotoMain" src="../img/about-us/main-image.png" /></div>
 					<div class="homeHumanaLogoAll">
 						<img
-							class="margin-y-5"
+							class="margin-y-5 homeSectionTitle"
 							src="../img/about-us/main-title.png"
-							alt=""
+							alt="main-title"
 						/>
 
 						<p class="homeSectionText fontWhite">
@@ -87,17 +86,17 @@
 					</div>
 				</div>
 				<div class="buttonContainer">
-					<a class="button margin-y-5" href="">Conocé los proyectos</a>
+					<a class="button margin-y-5" href="#conoceButton">Conocé los proyectos</a>
 				</div>
 			</div>
 		</main>
 
 		<div class="triangle-down"></div>
 
-		<section class="bgWhite">
+		<section class="bgWhite" id="conoceButton">
 			<div class="Container homeSection">
 				<div class="homeSectionLogoAll">
-					<img src="../img/about-us/humana-title.png" alt="" />
+					<img class="homeSectionTitle" src="../img/about-us/humana-title.png" alt="humana-title" />
 					<h3 class="sectionSubtitle fontLightBlue">
 						Asesoría en discapacidad
 					</h3>
@@ -119,8 +118,8 @@
 				<div>
 					<img
 						src="../img/about-us/humana-image.png"
-						alt=""
-						class="homeSectionPhoto"
+						alt="humana-image"
+						class="aboutUsSectionPhoto"
 					/>
 				</div>
 			</div>
@@ -130,12 +129,12 @@
 				<div>
 					<img
 						src="../img/about-us/ory-image.png"
-						alt=""
-						class="homeSectionPhoto"
+						alt="ory-image"
+						class="aboutUsSectionPhoto"
 					/>
 				</div>
 				<div class="homeSectionLogoAll">
-					<img src="../img/about-us/ory-title.png" alt="" />
+					<img class="homeSectionTitle" src="../img/about-us/ory-title.png" alt="ory-title" />
 					<h3 class="sectionSubtitle fontLightBlue">
 						Centro de contención comunitaria para personas con discapacidad
 					</h3>
@@ -159,7 +158,7 @@
 		<section class="bgWhite">
 			<div class="Container homeSection">
 				<div class="homeSectionLogoAll">
-					<img src="../img/about-us/otzma-title.png" alt="" />
+					<img class="homeSectionTitle" src="../img/about-us/otzma-title.png" alt="ory-title" />
 					<h3 class="sectionSubtitle fontLightBlue">
 						Centro cultural terapéutico para niñxs con problemáticas en el
 						desarrollo y discapacidad intelectual
@@ -182,8 +181,8 @@
 				<div>
 					<img
 						src="../img/about-us/otzma-image.png"
-						alt=""
-						class="homeSectionPhoto"
+						alt="otzma-image"
+						class="aboutUsSectionPhoto"
 					/>
 				</div>
 			</div>
@@ -193,12 +192,12 @@
 				<div>
 					<img
 						src="../img/about-us/re-image.png"
-						alt=""
-						class="homeSectionPhoto"
+						alt="re-image"
+						class="aboutUsSectionPhoto"
 					/>
 				</div>
 				<div class="homeSectionLogoAll">
-					<img src="../img/about-us/re-title.png" alt="" />
+					<img class="homeSectionTitle" src="../img/about-us/re-title.png" alt="re-title" />
 					<h3 class="sectionSubtitle fontOrange">
 						Agite inclusivo. Grupos terapéuticos y animaciones de eventos
 					</h3>
@@ -222,7 +221,7 @@
 		<section class="bgWhite">
 			<div class="Container homeSection">
 				<div class="homeSectionLogoAll">
-					<img src="../img/about-us/va-moviendo-title.png" alt="" />
+					<img class="homeSectionTitle" src="../img/about-us/va-moviendo-title.png" alt="va-moviendo-title" />
 					<h3 class="sectionSubtitle fontLightBlue">
 						Proyecto sobre vivienda autónoma
 					</h3>
@@ -244,8 +243,8 @@
 				<div>
 					<img
 						src="../img/about-us/va-moviendo-image.png"
-						alt=""
-						class="homeSectionPhoto"
+						alt="va-moviendo-image"
+						class="aboutUsSectionPhoto"
 					/>
 				</div>
 			</div>
@@ -255,12 +254,12 @@
 				<div>
 					<img
 						src="../img/about-us/ory-image.png"
-						alt=""
-						class="homeSectionPhoto"
+						alt="ory-image"
+						class="aboutUsSectionPhoto"
 					/>
 				</div>
 				<div class="homeSectionLogoAll">
-					<img src="../img/about-us/taglit-title.png" alt="" />
+					<img class="homeSectionTitle" src="../img/about-us/taglit-title.png" alt="taglit-title" />
 					<h3 class="sectionSubtitle fontOrange">
 						Experiencia de viaje a Israel para personas con IDD
 					</h3>
@@ -284,8 +283,10 @@
 		<footer>
 			<div class="bgWhiteFooter">
 				<div class="Container footer">
-					<div><img src="../img/home/home-humana-footer.png" alt="" /></div>
 					<div class="title dBlock">
+						<a href="">
+							<img class="logo" src="../img/logo.png" alt="logo" />
+						</a>
 						<a href="../index.html">HOME</a>
 						<a href="index.html">ACERCA DE</a>
 						<a href="">ASESORÍAS</a>
@@ -312,6 +313,17 @@
 						2021 Todos los derechos reservados HUMANA. Diseñado por
 						<a href="">Candela Gaitán</a>. Desarrollado por
 						<a href="">Iván Polanis</a> y <a href="">Nazareno</a>
+					</p>
+				</div>
+				<div class="Container rights footerResponsive">
+					<p>
+						2021 Todos los derechos reservados HUMANA.
+						<br />
+						Diseñado por
+						<a href="">Candela Gaitán</a>.
+						<br />
+						Desarrollado por
+						<a href="">Iván Polanis</a> y <a href="">Nazareno Ledesma</a>.
 					</p>
 				</div>
 			</div>

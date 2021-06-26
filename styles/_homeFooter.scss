@@ -11,10 +11,10 @@
 	}
 }
 .dBlock {
-	margin-top: 30px;
-	display: block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 100%;
-	text-align: center;
 }
 .socialMedia {
 	display: flex;

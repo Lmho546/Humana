@@ -4,10 +4,14 @@
 		max-height: unset;
 		flex-direction: column;
 		margin: 0px;
+		&.navBar {
+			justify-content: center;
+		}
 	}
 
-	.navBar {
-		justify-content: center;
+
+	.homeSection {
+		min-height: unset;
 	}
 
 	.homeHumanaLogoAll {
@@ -71,6 +75,12 @@
 	.rights {
 		text-align: center;
 	}
+
+	.aboutUsSectionPhoto {
+		margin: 10px;
+    	margin-top: 20px;
+    	margin-bottom: 20px;
+	}
 }
 
 @media (max-width: 980px) {
@@ -99,31 +109,10 @@
 		display: none;
 	}
 
-	.menu {
-		cursor: pointer;
-
-		.baseMenu {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			width: 60px;
-			height: 60px;
-			background: white;
-			border-radius: 50%;
-			border: 2px solid #ea2560;
-		}
-		.lineMenu {
-			padding-left: 15px;
-			padding-right: 15px;
-			margin-bottom: 3px;
-			margin-top: 3px;
-			width: 5px;
-			height: 5px;
-			background: #ea2560;
-			border-radius: 6px;
-		}
+	.logo {
+		margin-left: 1.5rem;
 	}
+
 	.Container{
 		.toggleButton {
 			display: flex;
@@ -157,7 +146,7 @@
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 670px) {
 	.homeHumanaLogo {
 		width: 300px;
 	}
@@ -189,10 +178,6 @@
 	}
 
 	.footer {
-		:first-child img {
-			display: none;
-		}
-
 		.title {
 			display: none;
 		}
@@ -209,6 +194,10 @@
 				font-size: 44px;
 			}
 		}
+	}
+
+	.aboutUsSectionPhoto {
+		width: 500px;
 	}
 }
 @media (max-width: 500px) {
@@ -242,5 +231,9 @@
 	}
 	.rights {
 		font-size: 13px;
+	}
+
+	.aboutUsSectionPhoto {
+		width: 380px;
 	}
 }

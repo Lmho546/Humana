@@ -37,7 +37,7 @@ header {
 
 .toggleButton{
 	position: absolute;
-	top: 2.725rem;
+	top: 1.6rem;
 	right: 2rem;
 	display: none;
 	flex-direction: column;
@@ -57,7 +57,7 @@ a {
 	font-weight: bold;
 	text-decoration: none;
 	list-style: none;
-	color: rgb(241, 106, 129);
+	color: #ea2560;
 }
 
 @each $color, $key in $colors {
@@ -86,12 +86,9 @@ a {
 	color: white;
 }
 
-.buttonContactoResponsive {
-	display: none !important;
-}
-
 .logo {
-	width: 75px;
+	width: 30px;
+	margin: 0 32px;
 }
 
 .selector {
@@ -99,9 +96,8 @@ a {
 	height: 6px;
 	background: #ea2560;
 	border-radius: 50%;
-	margin-top: 7px;
 	position: absolute;
-	bottom: -10px;
+	bottom: -1px;
 }
 
 .selector2 {
@@ -109,7 +105,6 @@ a {
 	height: 6px;
 	background: #5d17eb;
 	border-radius: 50%;
-	margin-top: 7px;
 	position: absolute;
-	bottom: -10px;
+	bottom: -1px;
 }
