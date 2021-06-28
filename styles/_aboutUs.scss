@@ -12,7 +12,62 @@
   }
 
 
+ .aboutUsMainTitle {
+    width: 600px;
+}
+ .aboutUsMainLogoAll {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+    margin: auto;
+    margin-right: 100px;
+    margin-left: 40px;
+}
+ .aboutUsMainPhoto {
+    width: 650px;
+    margin: auto;
+    margin-right: 50px;
+}
+
+
+.aboutUsSectionTitle {
+	margin-bottom: 0px;
+}
  .aboutUsSectionPhoto {
     width: 600px;
-	margin: 120px;
+    margin: auto;
+    margin-left: 40px;
+    margin-right: 50px;
+}
+
+.aboutUsSectionLogoAll {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	margin: auto;
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+
+.aboutUsSectionTitle-2 {
+	margin-bottom: 0px;
+    width: 380px;
+}
+.aboutUsSectionPhoto-2{
+    width: 680px;
+    margin: auto;
+    margin-left: 40px;
+    margin-right: 50px;
+}
+.aboutUsSectionLogoAll-2 {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+    margin: auto;
+    margin-left: 140px;
+    margin-right: 150px
 }
