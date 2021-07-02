@@ -762,6 +762,163 @@ a {
   margin-right: 150px;
 }
 
+.consultancies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 8rem 0;
+}
+
+.consultancies .item {
+  display: block;
+  text-align: center;
+}
+
+.consultancies .item img {
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+}
+
+.consultanciesSectionCategories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 50%;
+}
+
+.consultanciesSectionCategories .categoryContainer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-right: 139px;
+  display: block;
+  width: 50%;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.07px;
+}
+
+.videos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.videos .item {
+  width: calc(100% / 3);
+}
+
+.videos .item::before {
+  content: '';
+  float: left;
+  padding-top: 100%;
+}
+
+.videos .item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.consultanciesSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.consultanciesSectionAll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 120px;
+}
+
+.card {
+  width: 35%;
+  min-height: 740px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 1px -1px 19px 1px rgba(0, 0, 0, 0.42);
+  -webkit-box-shadow: 1px -1px 19px 1px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: 1px -1px 19px 1px rgba(0, 0, 0, 0.42);
+  margin: 40px 0;
+  padding-bottom: 12px;
+}
+
+.card .cardHeader {
+  width: 100%;
+  height: 45%;
+}
+
+.card .cardHeader .cardImage {
+  border-radius: 16px 16px 0 0;
+  height: 100%;
+  width: 100%;
+}
+
+.card .cardBody {
+  padding: 0 3rem;
+}
+
+.card .cardBody .cardTitle {
+  font-family: 'Open Sans';
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.card .cardBody .cardDescription {
+  font-family: 'Open Sans';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
 @media (max-width: 1440px) {
   .Container {
     width: unset;
@@ -904,6 +1061,12 @@ a {
   .aboutUsSectionPhoto-2 {
     margin: 0px;
   }
+  .consultanciesSectionCategories .categoryContainer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 40px;
+    display: block;
+  }
 }
 
 @media (max-width: 980px) {
@@ -915,6 +1078,9 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .homeSection .card {
+    width: 45%;
   }
 }
 
@@ -967,6 +1133,13 @@ a {
     display: -ms-flexbox;
     display: flex;
   }
+  .consultanciesSectionCategories .categoryContainer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 0px;
+    display: block;
+    width: 100%;
+  }
   .selector2 {
     display: none;
   }
@@ -975,6 +1148,9 @@ a {
   }
   .aboutUsMainPhoto {
     width: 550px;
+  }
+  .homeSection .card {
+    width: 50%;
   }
 }
 
@@ -1001,6 +1177,7 @@ a {
   .homeSectionCategories .categoryContainer {
     padding: 15px;
     text-align: justify;
+    width: 100%;
   }
   .homeSectionCategories .categoryContainer .title {
     text-align: center;
@@ -1009,14 +1186,14 @@ a {
     display: none;
   }
   .socialMedia .socialIcon {
-    height: 88px;
-    width: 88px;
+    height: 80px;
+    width: 80px;
     margin: 0px;
     margin-left: 10.5px;
     margin-right: 10.5px;
   }
   .socialMedia .socialIcon i {
-    font-size: 44px;
+    font-size: 36px;
   }
   .aboutUsMainTitle {
     width: 420px;
@@ -1029,6 +1206,20 @@ a {
   }
   .aboutUsSectionPhoto-2 {
     width: 580px;
+  }
+  .homeSection .card {
+    width: 65%;
+  }
+  .homeSection .card .cardBody .cardDescription {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .videos .item {
+    width: calc(100% / 2);
+  }
+  .consultanciesLogo {
+    width: 100%;
+    padding: 0 20px;
   }
 }
 
@@ -1081,6 +1272,16 @@ a {
     width: 420px;
     margin-left: 30px;
     margin-right: 20px;
+  }
+  .homeSection .card {
+    width: 80%;
+  }
+  .homeSection .card .cardBody .cardDescription {
+    font-size: 13.5px;
+    line-height: 16px;
+  }
+  .videos .item {
+    width: 100%;
   }
 }
 
@@ -1135,162 +1336,6 @@ a {
   .aboutUsSectionPhoto-2 {
     width: 410px;
   }
-}
-
-.consultancies {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 8rem 0;
-}
-
-.consultancies .item {
-  display: block;
-  text-align: center;
-}
-
-.consultancies .item img {
-  width: 104px;
-  height: 104px;
-  border-radius: 50%;
-}
-
-.consultanciesSectionCategories {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 50%;
-}
-
-.consultanciesSectionCategories .categoryContainer {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-right: 139px;
-  display: block;
-  width: 50%;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 19.07px;
-}
-
-.videos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.videos .item {
-  width: calc(100% / 3);
-}
-
-.videos .item::before {
-  content: '';
-  float: left;
-  padding-top: 100%;
-}
-
-.videos .item img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.consultanciesSection {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.consultanciesSectionAll {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 120px;
-}
-
-.card {
-  width: 35%;
-  height: 740px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 16px;
-  background-color: #fff;
-  box-shadow: 1px -1px 19px 1px rgba(0, 0, 0, 0.42);
-  -webkit-box-shadow: 1px -1px 19px 1px rgba(0, 0, 0, 0.42);
-  -moz-box-shadow: 1px -1px 19px 1px rgba(0, 0, 0, 0.42);
-  margin: 40px 0;
-}
-
-.card .cardHeader {
-  width: 100%;
-  height: 45%;
-}
-
-.card .cardHeader .cardImage {
-  border-radius: 16px 16px 0 0;
-  height: 100%;
-  width: 100%;
-}
-
-.card .cardBody {
-  padding: 0 3rem;
-}
-
-.card .cardBody .cardTitle {
-  font-family: 'Open Sans';
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0em;
-  text-align: center;
-  margin: 1rem 0;
-}
-
-.card .cardBody .cardDescription {
-  font-family: 'Open Sans';
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 20px;
-  letter-spacing: 0em;
-  text-align: center;
 }
 
 .margin-0 {

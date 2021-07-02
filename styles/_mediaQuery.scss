@@ -9,7 +9,6 @@
 		}
 	}
 
-
 	.homeSection {
 		min-height: unset;
 		.sectionSubtitle {
@@ -106,7 +105,7 @@
 		order: -1;
 		text-align: justify;
 	}
-	
+
 	.aboutUsSectionLogoAll-2 {
 		margin: 5px;
 		margin-top: 50px;
@@ -114,16 +113,24 @@
 		margin-left: 50px;
 		align-items: center;
 		order: -1;
-		text-align: justify
+		text-align: justify;
 	}
 
 	.aboutUsSectionPhoto {
 		margin: 10px;
-    	margin-top: 20px;
-    	margin-bottom: 60px;
+		margin-top: 20px;
+		margin-bottom: 60px;
 	}
 	.aboutUsSectionPhoto-2 {
 		margin: 0px;
+	}
+	.consultanciesSectionCategories {
+		.categoryContainer {
+			padding-top: 2rem;
+			padding-bottom: 2rem;
+			padding-right: 40px;
+			display: block;
+		}
 	}
 }
 
@@ -138,10 +145,14 @@
 		height: unset;
 		display: flex;
 	}
+	.homeSection {
+		.card {
+			width: 45%;
+		}
+	}
 }
 
 @media (max-width: 768px) {
-
 	.selector {
 		display: none;
 	}
@@ -150,7 +161,7 @@
 		margin-left: 1.5rem;
 	}
 
-	.Container{
+	.Container {
 		.toggleButton {
 			display: flex;
 		}
@@ -178,15 +189,29 @@
 			}
 		}
 	}
-    .selector2{
-        display: none;
-    }
+	.consultanciesSectionCategories {
+		.categoryContainer {
+			padding-top: 2rem;
+			padding-bottom: 2rem;
+			padding-right: 0px;
+			display: block;
+			width: 100%;
+		}
+	}
+	.selector2 {
+		display: none;
+	}
 
 	.aboutUsMainTitle {
 		width: 500px;
 	}
 	.aboutUsMainPhoto {
 		width: 550px;
+	}
+	.homeSection {
+		.card {
+			width: 50%;
+		}
 	}
 }
 
@@ -217,6 +242,7 @@
 		.categoryContainer {
 			padding: 15px;
 			text-align: justify;
+			width: 100%;
 
 			.title {
 				text-align: center;
@@ -232,13 +258,13 @@
 
 	.socialMedia {
 		.socialIcon {
-			height: 88px;
-			width: 88px;
+			height: 80px;
+			width: 80px;
 			margin: 0px;
 			margin-left: 10.5px;
 			margin-right: 10.5px;
 			i {
-				font-size: 44px;
+				font-size: 36px;
 			}
 		}
 	}
@@ -256,8 +282,28 @@
 	.aboutUsSectionPhoto-2 {
 		width: 580px;
 	}
-}
+	.homeSection {
+		.card {
+			width: 65%;
+			.cardBody {
+				.cardDescription {
+					font-size: 14px;
+					line-height: 16px;
 
+				}
+			}
+		}
+	}
+	.videos {
+		.item {
+			width: calc(100% / 2);
+		}
+	}
+	.consultanciesLogo{
+		width: 100%;
+		padding: 0 20px;
+	}
+}
 
 @media (max-width: 500px) {
 	.button {
@@ -303,8 +349,8 @@
 	.aboutUsMainPhoto {
 		width: 400px;
 	}
-	
-	 .aboutUsSectionTitle-2 {
+
+	.aboutUsSectionTitle-2 {
 		width: 310px;
 		height: 50px;
 	}
@@ -313,13 +359,28 @@
 		width: 380px;
 		margin-left: 50px;
 		margin-right: 20px;
-		
 	}
 
 	.aboutUsSectionPhoto-2 {
 		width: 420px;
 		margin-left: 30px;
 		margin-right: 20px;
+	}
+	.homeSection {
+		.card {
+			width: 80%;
+			.cardBody {
+				.cardDescription {
+					font-size: 13.5px;
+					line-height: 16px;
+				}
+			}
+		}
+	}
+	.videos {
+		.item {
+			width: 100%;
+		}
 	}
 }
 
@@ -369,11 +430,10 @@
 		margin-left: 10px;
 	}
 	
-
+	
 }
 
 @media (max-width: 360px) {
-
 	.aboutUsSectionTitle-2 {
 		width: 290px;
 	}
@@ -384,6 +444,5 @@
 
 	.aboutUsSectionPhoto-2 {
 		width: 410px;
-		
 	}
 }
