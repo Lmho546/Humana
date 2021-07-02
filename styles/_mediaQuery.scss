@@ -53,6 +53,11 @@
 		margin-top: 10px;
 	}
 
+	.homeSectionTitle-2 {
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+
 	.homeSectionText {
 		margin-top: 5px;
 	}
@@ -191,7 +196,7 @@
 	}
 
 	.homePhotoMain {
-		width: 500px;
+		width: 460px;	
 	}
 
 	.homeSectionPhoto {
@@ -200,6 +205,9 @@
 
 	.homeSectionTitle {
 		width: 400px;
+	}
+	.homeSectionTitle-2 {
+		width: 300px;
 	}
 
 	.homeSectionCategories {
@@ -257,11 +265,15 @@
 	}
 
 	.homeSectionTitle {
-		width: 300px;
+		width: 350px;
+	}
+
+	.homeSectionTitle-2 {
+		width: 250px;
 	}
 
 	.homePhotoMain {
-		width: 350px;
+		width: 380px;
 	}
 
 	.homeSectionPhoto {
@@ -313,6 +325,41 @@
 
 @media (max-width: 420px) {
 
+	.homeHumanaLogoAll {
+		margin: 5px;
+		margin-top: 50px;
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+
+	.homePhotoMain {
+		margin-right: 0px;
+		margin-left: 0px;
+		width: 340px;
+	}
+
+	.homeSectionLogoAll {
+		margin: 5px;
+		margin-top: 50px;
+		margin-right: 18px;
+		margin-left: 18px;
+	}
+
+	.homeSectionTitle {
+		width: 310px;
+	}
+
+	.homeSectionTitle-2 {
+		width: 240px;
+	}
+
+	.homeSectionPhoto {
+		margin: 5px;
+		margin-right: 0px;
+		margin-left: 0px;
+		width: 340px;
+	}
+
 	.aboutUsMainTitle {
 		width: 310px;
 		height: 60px;
@@ -321,6 +368,7 @@
 		width: 370px;
 		margin-left: 10px;
 	}
+	
 
 }
 
