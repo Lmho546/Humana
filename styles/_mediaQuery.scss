@@ -99,8 +99,8 @@
 	.aboutUsSectionLogoAll {
 		margin: 5px;
 		margin-top: 50px;
-		margin-right: 50px;
-		margin-left: 50px;
+		margin-right: 100px;
+		margin-left: 100px;
 		align-items: center;
 		order: -1;
 		text-align: justify;
@@ -109,8 +109,8 @@
 	.aboutUsSectionLogoAll-2 {
 		margin: 5px;
 		margin-top: 50px;
-		margin-right: 50px;
-		margin-left: 50px;
+		margin-right: 100px;
+		margin-left: 100px;
 		align-items: center;
 		order: -1;
 		text-align: justify;
@@ -124,14 +124,41 @@
 	.aboutUsSectionPhoto-2 {
 		margin: 0px;
 	}
-	.consultanciesSectionCategories {
-		.categoryContainer {
-			padding-top: 2rem;
-			padding-bottom: 2rem;
-			padding-right: 40px;
-			display: block;
+
+	.consultanciesLogo{
+		margin: 1.25rem;
+	}
+	.consultancies {
+		.item {
+			margin: 2rem;
 		}
 	}
+
+	.consultanciesSectionCategories {
+		.categoryContainer {
+			display: flex;
+			flex-direction: column;
+			text-align: justify;
+			align-items: center;
+			padding: 20px;
+			padding-top: 2rem;
+			padding-bottom: 2rem;
+			.title {
+				text-align: center;
+			}
+		}
+
+	}
+
+	.card {
+		.cardBody {
+			.cardDescription {
+				text-align: justify;
+			}
+		}
+	}
+
+	
 }
 
 @media (max-width: 980px) {
@@ -150,15 +177,18 @@
 			width: 45%;
 		}
 	}
+	.Container {
+		&.navBar {
+			.socialMedia {
+				display: none;
+			}
+		}
+	}
 }
 
 @media (max-width: 768px) {
 	.selector {
 		display: none;
-	}
-
-	.logo {
-		margin-left: 1.5rem;
 	}
 
 	.Container {
@@ -168,10 +198,19 @@
 		&.navBar {
 			flex-direction: column;
 			align-items: flex-start;
+			
+			.logoResponsive {
+				display: flex;
+			}
+
 			.navbar-links {
 				display: none;
 				flex-direction: column;
 				width: 100%;
+
+				.logo {
+					display: none;
+				}
 				ul {
 					width: 100%;
 					flex-direction: column;
@@ -189,12 +228,12 @@
 			}
 		}
 	}
+
 	.consultanciesSectionCategories {
 		.categoryContainer {
+			padding: 0px;
 			padding-top: 2rem;
 			padding-bottom: 2rem;
-			padding-right: 0px;
-			display: block;
 			width: 100%;
 		}
 	}
@@ -344,7 +383,6 @@
 
 	.aboutUsMainTitle {
 		width: 350px;
-		height: 50px;
 	}
 	.aboutUsMainPhoto {
 		width: 400px;
@@ -352,7 +390,6 @@
 
 	.aboutUsSectionTitle-2 {
 		width: 310px;
-		height: 50px;
 	}
 
 	.aboutUsSectionPhoto {
@@ -423,7 +460,6 @@
 
 	.aboutUsMainTitle {
 		width: 310px;
-		height: 60px;
 	}
 	.aboutUsMainPhoto {
 		width: 370px;

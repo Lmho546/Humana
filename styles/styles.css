@@ -6,6 +6,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .fontWhite {
   color: #ffffffd9;
 }
@@ -270,13 +274,17 @@ header {
   z-index: 0;
 }
 
+.logo {
+  width: 30px;
+}
+
 .Container.navBar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   list-style: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -286,6 +294,11 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+.Container.navBar .logoResponsive {
+  display: none;
+  margin-left: 1.5rem;
 }
 
 .Container.navBar .navbar-links {
@@ -310,6 +323,26 @@ header {
 
 .Container.navBar .navbar-links li a {
   display: block;
+}
+
+.Container.navBar .navbar-links .logo {
+  margin: 0 32px;
+}
+
+.Container.navBar .socialMedia {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Container.navBar .socialMedia .socialIcon {
+  height: 40px;
+  width: 40px;
+  margin-top: 0px;
+}
+
+.Container.navBar .socialMedia .socialIcon i {
+  font-size: 20px;
 }
 
 .toggleButton {
@@ -396,11 +429,6 @@ a {
 
 .button:visited {
   color: white;
-}
-
-.logo {
-  width: 30px;
-  margin: 0 32px;
 }
 
 .selector {
@@ -552,7 +580,7 @@ a {
 }
 
 .homeCenter a {
-  margin-top: 52px;
+  margin-top: 25px;
 }
 
 .title {
@@ -651,6 +679,10 @@ a {
 
 .footerResponsive {
   display: none;
+}
+
+#aboutUs {
+  overflow-x: hidden;
 }
 
 .triangle-down {
@@ -1030,8 +1062,8 @@ a {
   .aboutUsSectionLogoAll {
     margin: 5px;
     margin-top: 50px;
-    margin-right: 50px;
-    margin-left: 50px;
+    margin-right: 100px;
+    margin-left: 100px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1043,8 +1075,8 @@ a {
   .aboutUsSectionLogoAll-2 {
     margin: 5px;
     margin-top: 50px;
-    margin-right: 50px;
-    margin-left: 50px;
+    margin-right: 100px;
+    margin-left: 100px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1061,11 +1093,33 @@ a {
   .aboutUsSectionPhoto-2 {
     margin: 0px;
   }
+  .consultanciesLogo {
+    margin: 1.25rem;
+  }
+  .consultancies .item {
+    margin: 2rem;
+  }
   .consultanciesSectionCategories .categoryContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: justify;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    padding-right: 40px;
-    display: block;
+  }
+  .consultanciesSectionCategories .categoryContainer .title {
+    text-align: center;
+  }
+  .card .cardBody .cardDescription {
+    text-align: justify;
   }
 }
 
@@ -1082,14 +1136,14 @@ a {
   .homeSection .card {
     width: 45%;
   }
+  .Container.navBar .socialMedia {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
   .selector {
     display: none;
-  }
-  .logo {
-    margin-left: 1.5rem;
   }
   .Container .toggleButton {
     display: -webkit-box;
@@ -1105,6 +1159,11 @@ a {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  .Container.navBar .logoResponsive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .Container.navBar .navbar-links {
     display: none;
     -webkit-box-orient: vertical;
@@ -1112,6 +1171,9 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
+  }
+  .Container.navBar .navbar-links .logo {
+    display: none;
   }
   .Container.navBar .navbar-links ul {
     width: 100%;
@@ -1134,10 +1196,9 @@ a {
     display: flex;
   }
   .consultanciesSectionCategories .categoryContainer {
+    padding: 0px;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    padding-right: 0px;
-    display: block;
     width: 100%;
   }
   .selector2 {
@@ -1254,14 +1315,12 @@ a {
   }
   .aboutUsMainTitle {
     width: 350px;
-    height: 50px;
   }
   .aboutUsMainPhoto {
     width: 400px;
   }
   .aboutUsSectionTitle-2 {
     width: 310px;
-    height: 50px;
   }
   .aboutUsSectionPhoto {
     width: 380px;
@@ -1317,7 +1376,6 @@ a {
   }
   .aboutUsMainTitle {
     width: 310px;
-    height: 60px;
   }
   .aboutUsMainPhoto {
     width: 370px;

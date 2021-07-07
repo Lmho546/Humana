@@ -10,15 +10,24 @@ header {
 	z-index: 0;
 }
 
+.logo {
+	width: 30px;
+}
+
 .Container{
 	&.navBar {
 		display: flex;
-		justify-content: flex-start;
+		justify-content: space-between;
 		list-style: none;
 		align-items: center;
 		padding: 12px;
 		flex-direction: row;
-		
+
+		.logoResponsive {
+			display: none;
+			margin-left: 1.5rem;
+		}
+
 		.navbar-links {
 			display: flex;
 			li {
@@ -30,6 +39,22 @@ header {
 				a{
 					display: block;
 				}
+			}
+			.logo {
+				margin: 0 32px;
+			}
+		}
+		.socialMedia {
+			align-items: center;
+			.socialIcon {
+				height: 40px;
+    			width: 40px;
+				margin-top: 0px;
+					i { 
+
+						font-size:20px;
+					
+					}
 			}
 		}
 	}
@@ -84,11 +109,6 @@ a {
 }
 .button:visited {
 	color: white;
-}
-
-.logo {
-	width: 30px;
-	margin: 0 32px;
 }
 
 .selector {
