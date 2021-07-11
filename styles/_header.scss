@@ -22,13 +22,13 @@ header {
 		align-items: center;
 		padding: 12px;
 		flex-direction: row;
-
 		.logoResponsive {
 			display: none;
 			margin-left: 1.5rem;
 		}
-
+		
 		.navbar-links {
+			width: 100%;
 			display: flex;
 			li {
 				display: flex;
@@ -43,18 +43,18 @@ header {
 			.logo {
 				margin: 0 32px;
 			}
-		}
-		.socialMedia {
-			align-items: center;
-			.socialIcon {
-				height: 40px;
-    			width: 40px;
-				margin-top: 0px;
-					i { 
-
-						font-size:20px;
-					
+			.socialMedia {
+				align-items: center;
+				margin: 0 0 0 auto;
+				a{
+					width: 40px;
+					margin: 0 12px;
+					.socialIcon {
+						height: 34px;
+						width: 34px;
+						margin-top: 0px;
 					}
+				}
 			}
 		}
 	}
