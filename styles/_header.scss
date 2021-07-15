@@ -2,6 +2,8 @@ $colors: (
 	'Pink': #ea2560,
 	'Blue': #5d17eb,
 	'White': white,
+	'Yellow': #F5C20E,
+
 );
 
 header {
@@ -125,6 +127,15 @@ a {
 	width: 6px;
 	height: 6px;
 	background: #5d17eb;
+	border-radius: 50%;
+	position: absolute;
+	bottom: -1px;
+}
+
+.selector3 {
+	width: 6px;
+	height: 6px;
+	background: #F5C20E;
 	border-radius: 50%;
 	position: absolute;
 	bottom: -1px;

@@ -8,6 +8,8 @@ $colors: (
 	'Blue': #4b65ff,
 	'DarkBlue': #0349aa,
 	'BlueFacebook': #3a5a98,
+	'Violet': #6874E8,
+
 );
 
 @each $color, $key in $colors {
@@ -16,7 +18,7 @@ $colors: (
 
 		@if ($color == 'White') {
 			background-image: url('../img/home/background-pink.png');
-		} @else {
+		} @else{
 			background-image: url('../img/home/background-white.png');
 		}
 	}
@@ -39,6 +41,9 @@ $colors: (
 }
 #aboutUs {
 	.bgWhite {
-		background-image: url('../img/about-us/background-lightblue.png');
+		background-image: url('../img/about-us/background-violet.png');
+	}
+	.bgVioletFooter{
+		background-color: #6571E1 !important;
 	}
 }
