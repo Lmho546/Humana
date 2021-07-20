@@ -1,5 +1,14 @@
 #aboutUs {
 	overflow-x: hidden;
+
+	.homeSection{
+		min-height: auto;
+	}
+	main{
+		.homeSection{
+			min-height:65vh;
+		}
+	}
 }
 
 .triangle-down {
