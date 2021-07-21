@@ -1,5 +1,9 @@
-.homeBodyBackground {
+#home {
     display: flex;
     flex-direction: column;
     background-color: white;
+
+    .homeSection {
+        min-height: 0px;
+    }
 }
