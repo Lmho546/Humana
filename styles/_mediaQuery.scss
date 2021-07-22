@@ -194,6 +194,10 @@
 			}
 		}
 	}
+	.triangle-down {
+		border-left: 49.1vw solid transparent;
+		border-right: 49.1vw solid transparent;
+	}
 }
 
 @media (max-width: 768px) {
@@ -288,6 +292,11 @@
 			width: 50%;
 		}
 	}
+
+	.triangle-down {
+		border-left: 48.7vw solid transparent;
+		border-right: 48.7vw solid transparent;
+	}
 }
 
 @media (max-width: 670px) {
@@ -381,6 +390,10 @@
 		width: 100%;
 		padding: 0 20px;
 	}
+	.triangle-down {
+		border-left: 48.5vw solid transparent;
+		border-right: 48.5vw solid transparent;
+	}
 }
 
 @media (max-width: 500px) {
@@ -454,6 +467,10 @@
 			width: 100%;
 		}
 	}
+	.triangle-down {
+		border-left: 48.2vw solid transparent;
+		border-right: 48.2vw solid transparent;
+	}
 }
 
 @media (max-width: 420px) {
@@ -499,6 +516,11 @@
 	.aboutUsMainPhoto {
 		width: 370px;
 		
+	}
+
+	.triangle-down {
+		border-left: 48vw solid transparent;
+		border-right: 48vw solid transparent;
 	}
 	
 }
